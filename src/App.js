@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import {Helmet} from 'react-helmet';
+
+import {NavBar} from "./components/NavBar";
+import {HeroSection} from "./components/HeroSection";
+import {SpecialSection} from "./components/SpecialSection";
+import {TestimonialSection} from "./components/TestimonialSection";
+import {AboutSection} from "./components/AboutSection";
+import {Footer} from "./components/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<Helmet>
+				<title>Little Lemon Restaurant - Known for Uniqueness</title>
+				<meta property="og:title" content="Little Lemon - Restaurant"/>
+				<meta property="og:description"
+				      content="Little lemon restaurant is known for unique taste and tailord serving as per demand."/>
+				<meta property="og:image" content="logo.png"/>
+				<meta property="og:url" content="http://localhost:3000"/>
+			</Helmet>
+			<NavBar/>
+			<HeroSection/>
+			<SpecialSection/>
+			<TestimonialSection/>
+			<AboutSection/>
+			<Footer/>
+		</>
+	);
 }
 
 export default App;
