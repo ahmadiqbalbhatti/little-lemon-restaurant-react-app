@@ -10,7 +10,7 @@ export const HeroSection = () => {
 			</div>
 
 			<div>
-				<img src="./images/hero-image.png" alt="Image for Hero section in which a chef in sprinkling peper."/>
+				<img src="./images/hero-image.png" alt="Hero section in which a chef in sprinkling peper."/>
 			</div>
 		</section>
 	)
