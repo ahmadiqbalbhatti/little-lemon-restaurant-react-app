@@ -2,6 +2,7 @@ import {H1} from "./ui/H1";
 import {H2} from "./ui/H2";
 import {Paragraph} from "./ui/Paragraph";
 import {PrimaryButton} from "./ui/PrimaryButton";
+import {Link} from "react-router-dom";
 
 export const HeroSection = () => {
 	return (
@@ -17,9 +18,10 @@ export const HeroSection = () => {
 					eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				</Paragraph>
 
-				<PrimaryButton>
+				<Link to={"/reservation"}
+				      className={"bg-primary1 hover:bg-highLight1 w-fit py-3 px-8 rounded-2xl transition-colors duration-300"}>
 					Reserve a Table
-				</PrimaryButton>
+				</Link>
 
 			</div>
 
